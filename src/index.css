@@ -1,13 +1,53 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background-color: lightcyan; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  background-image: url("https://media.istockphoto.com/id/1134160027/photo/abstract-nature-background-dramatic-blue-sky-with-orange-colorful-sunset-clouds-in-twilight.jpg?s=612x612&w=0&k=20&c=To0OXRIoDGdWWNsbaXaL0ix3dIoE7ZtC4yHniEcDeTw=");
+  /* background-image: url('path/to/your/image.jpg'); */
+  background-size: cover; /* Optional: Adjust as needed */
+  background-position: center; /* Optional: Adjust as needed */
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  /* transform: translate(-50%, -50%); */
+  width: 30%;
+  height: max-content;
+  background-color: rgba(40, 34, 34, 50%);
+  padding: 20px;
+}
+.logoholder {
+  display: flex;
+}
+.name {
+  width: 50%;
+}
+.addlist {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.time {
+  margin-left: 40px;
+}
+.closing {
+  text-decoration: line-through;
+}
+.task {
+  margin: 10px;
+}
+input form {
+  width: 90%;
+  height: 20px;
+}
+.btn {
+  border-radius: 10px;
+  right: 5%;
+  position: absolute;
+  width: 40px;
+  height: 23px;
+}
+ul {
+  padding-left: 0px;
 }
