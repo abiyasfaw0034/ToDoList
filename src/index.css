@@ -1,35 +1,47 @@
 body {
-  /* background-color: lightcyan; */
+  background-color: lightcyan;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
-  background-image: url("https://media.istockphoto.com/id/1134160027/photo/abstract-nature-background-dramatic-blue-sky-with-orange-colorful-sunset-clouds-in-twilight.jpg?s=612x612&w=0&k=20&c=To0OXRIoDGdWWNsbaXaL0ix3dIoE7ZtC4yHniEcDeTw=");
+  /* background-image: url("https://media.istockphoto.com/id/1134160027/photo/abstract-nature-background-dramatic-blue-sky-with-orange-colorful-sunset-clouds-in-twilight.jpg?s=612x612&w=0&k=20&c=To0OXRIoDGdWWNsbaXaL0ix3dIoE7ZtC4yHniEcDeTw="); */
   /* background-image: url('path/to/your/image.jpg'); */
+
   background-size: cover; /* Optional: Adjust as needed */
   background-position: center; /* Optional: Adjust as needed */
 }
 .container {
   position: absolute;
   top: 10%;
-  left: 37%;
+  left: 28%;
   /* transform: translate(-50%, -50%); */
-  width: 30%;
+  width: 40%;
   height: max-content;
   background-color: rgba(40, 34, 34, 50%);
   padding: 20px;
 }
 .logoholder {
   display: flex;
+  font-family: cursive;
+  color: white;
+  background-color: #836fff;
+}
+.p {
+  font-family: inherit;
+  font-size: x-large;
 }
 .name {
-  width: 50%;
+  font-size: large;
+  left: 34%;
+  width: 80%;
+  position: relative;
 }
 .addlist {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 10px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin: 10px 0px 0px;
 }
 .time {
-  margin-left: 40px;
+  margin-top: 10px;
 }
 .closing {
   text-decoration: line-through;
@@ -42,12 +54,84 @@ input form {
   height: 20px;
 }
 .btn {
+  border: none;
   border-radius: 10px;
-  right: 5%;
+  right: 20%;
   position: absolute;
-  width: 40px;
-  height: 23px;
+  width: 52px;
+  height: 28px;
 }
 ul {
-  padding-left: 0px;
+  padding-left: 48px;
+  background-color: aliceblue;
+  padding-right: 68px;
+  margin-bottom: 0px;
+}
+.space {
+  height: 15px;
+  width: 100%;
+}
+.open {
+  background-color: aliceblue;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px 0px 0px 50px;
+}
+.addtask {
+  position: absolute;
+  /* background-color: aquamarine; */
+  background-color: #836fff;
+  width: 24%;
+
+  padding: 20px 0px 20px 40px;
+  border-radius: 30px;
+  left: 36%;
+  color: white;
+}
+.input {
+  border: none;
+  width: 70%;
+  height: 40px;
+  padding-left: 20px;
+  font-size: larger;
+}
+form button {
+  font-size: larger;
+  width: 86px;
+  height: 44px;
+  margin-left: 20px;
+}
+.bts {
+  border: none;
+  margin-top: 3%;
+  position: relative;
+  left: 30%;
+  height: 30px;
+  width: 20%;
+}
+.bts:hover {
+  background-color: #ff204e;
+}
+.btn:hover {
+  color: aliceblue;
+  background-color: black;
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox-round:hover {
+  background-color: gray;
+}
+.checkbox-round:checked {
+  background-color: gray;
 }

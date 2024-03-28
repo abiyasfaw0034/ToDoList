@@ -16,7 +16,8 @@ const todo = [
 ];
 
 export default function App() {
-  const [lists, setlists] = useState(todo);
+  const [lists, setlists] = useState([]);
+  const [showaddtext, setshowaddtext] = useState(false);
 
   function handleaddlists(item) {
     setlists([...lists, item]);
@@ -37,16 +38,48 @@ export default function App() {
       )
     );
   }
+  function handleshowaddtext() {
+    setshowaddtext(() => setshowaddtext(!showaddtext));
+  }
   return (
     <div className="container">
       <Logo />
-      <Addlist handleaddlists={handleaddlists} />
+
+      <div className="space"></div>
+
       <Todolist
         lists={lists}
         handledeletelist={handledeletelist}
         handledonetasks={handledonetasks}
       />
-      <Closing handlecleartasks={handlecleartasks} lists={lists} />
+      {lists.length > 0 ? (
+        <Closing handlecleartasks={handlecleartasks} lists={lists} />
+      ) : (
+        ""
+      )}
+
+      {showaddtext ? (
+        <Addlist
+          handleaddlists={handleaddlists}
+          setshowaddtext={setshowaddtext}
+        />
+      ) : (
+        <Mtss handleshowaddtext={handleshowaddtext} />
+      )}
     </div>
   );
 }
+function Mtss({ handleshowaddtext }) {
+  return (
+    <div className="addtask" onClick={handleshowaddtext}>
+      + New task
+    </div>
+  );
+}
+
+// if(symbol){
+//   handlecalculate
+// }
+// else{
+
+// }

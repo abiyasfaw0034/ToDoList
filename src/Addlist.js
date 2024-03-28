@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function Addlist({ handleaddlists }) {
+export function Addlist({ handleaddlists, setshowaddtext }) {
   const [task, settask] = useState("");
 
   function handleaddlist(e) {
@@ -15,6 +15,7 @@ export function Addlist({ handleaddlists }) {
     };
     handleaddlists(newtask);
     settask("");
+    setshowaddtext(false);
   }
 
   return (
@@ -23,13 +24,11 @@ export function Addlist({ handleaddlists }) {
         <input
           className="input"
           type="text"
-          placeholder="Add Text"
+          placeholder="Add Task"
           value={task}
           onChange={(e) => settask(e.target.value)}
         />
-        <button onClick={handleaddlist} style={{ height: "20px" }}>
-          +
-        </button>
+        <button onClick={handleaddlist}>+</button>
       </form>
     </div>
   );
