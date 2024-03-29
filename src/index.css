@@ -85,8 +85,11 @@ ul {
 
   padding: 20px 0px 20px 40px;
   border-radius: 30px;
-  left: 36%;
+  left: 34%;
   color: white;
+}
+.addtask:hover {
+  background-color: #6b58d3;
 }
 .input {
   border: none;
